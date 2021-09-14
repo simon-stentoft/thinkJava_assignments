@@ -32,8 +32,10 @@ public class Opg2 {
                 input = scanner.nextInt();
                 attempts++;
             }
-            else
+            else {
                 System.out.println("You guessed correctly!");
+                break;
+            }
         }
     }
 }
