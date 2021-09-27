@@ -2,19 +2,21 @@ package Chapter6;
 
 public class Opg4 {
     public static void main(String[] args) {
-        isAbecedarian("HEj");
-
-
+        String ord = "bacd";
+        if (isAbecedarian(ord)) {
+            System.out.println("Ordet " + ord + "er i abc-rækkefølge");
+        }
+        else {
+            System.out.println("Ordet " + ord + " er ikke i abc-rækkefølge");
+        }
     }
-    public static boolean isAbecedarian(String s) {
-        String string = s.toLowerCase();
 
-        for (int i = 0; i < string.length() - 1; i++) {
-            if (string.charAt(i) <= string.charAt(i + 1)) {
-                System.out.println("String is abecedarian.");
-            }
-            else
-                System.out.println("String is not abecedarian.");
+    // Write a method called isAbecedarian that
+    // takes a String and
+    // returns a boolean indicating whether the word is abecedarian.
+    public static boolean isAbecedarian(String ord) {
+        for (int i = 1; i < ord.length(); i++) {
+            if (ord.charAt(i)<ord.charAt(i-1)) return false;
         }
         return true;
     }
