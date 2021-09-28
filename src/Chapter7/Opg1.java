@@ -13,7 +13,7 @@ public class Opg1 {
                 i++;
             }
             return kiwi;
-        } //
+        } // TODO While i starting at 0 is smaller than the array a's length, kiwi (starting at 1) will be multiplied by the number at index i and that number will be the new kiwi, then i++; and the loop goes again.
 
         public static int grapefruit(int[] a, int grape) {
             for (int i = 0; i < a.length; i++) {
@@ -22,7 +22,7 @@ public class Opg1 {
                 }
             }
             return -1;
-        }
+        } // TODO
 
         public static int pineapple(int[] a, int apple) {
             int pear = 0;
@@ -32,7 +32,6 @@ public class Opg1 {
                 }
             }
             return pear;
-        }
+        } // TODO
     }
-}
-*/
+}*/
